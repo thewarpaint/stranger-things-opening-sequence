@@ -1,9 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,700';
+
 html, body {
   height: 100%;
-}
-
-body, h1 {
-  margin: 0;
 }
 
 body {
@@ -11,18 +9,38 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000000;
+  margin: 0;
   font-family: sans-serif;
-}
-
-h1 {
-  flex: 0 1 auto;
-  text-align: center;
-  text-transform: uppercase;
-  animation: stranger-things 2.9s infinite ease-in-out;
 }
 
 iframe {
   display: none;
+}
+
+#credits {
+  flex: 0 1 auto;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.25rem;
+}
+
+#people {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#people p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+.strange-thing {
+  animation: stranger-things 2.9s 1 ease-in-out;
 }
 
 @keyframes stranger-things {
