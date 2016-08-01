@@ -63,9 +63,11 @@ var StrangerThings = {
   },
 
   $credits: null,
+  $iframe: null,
   $people: null,
-  transitionEvent: null,
   creditIndex: 0,
+  scWidget: null,
+  transitionEvent: null,
 
   init: function () {
     this.$credits = document.getElementById('credits');
@@ -73,6 +75,31 @@ var StrangerThings = {
     this.$people = document.getElementById('people');
     this.transitionEvent = this.getRightTransitionEvent();
 
+    this.$iframe = this.getSCIframe();
+    document.body.appendChild(this.$iframe);
+
+    this.$scWidget = SC.Widget(this.$iframe.id);
+
+    this.$scWidget.bind(SC.Widget.Events.READY, function () {
+      this.start();
+      this.$scWidget.play();
+    }.bind(this));
+
+    this.$scWidget.bind(SC.Widget.Events.ERROR, function () {
+      this.start();
+    }.bind(this));
+  },
+
+  getSCIframe: function () {
+    var $iframe = document.createElement('iframe');
+
+    $iframe.id = 'soundcloud-iframe';
+    $iframe.src = '//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/275179936';
+
+    return $iframe;
+  },
+
+  start: function () {
     this.$credits.classList.add('strange-thing');
 
     if(this.transitionEvent) {
