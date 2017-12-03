@@ -2,39 +2,33 @@ var StrangerThings = {
   data: {
     credits: [
       {
-        people: ['Winona Ryder'],
+        people: ['Andrés Manuel López Obrador'],
       },
       {
-        people: ['David Harbour'],
+        people: ['Margarita Zavala'],
+      },
+      {
+        people: ['José Antonio Meade']
       },
       {
         people: [
-          'Finn Wolfhard',
-          'Millie Bobby Brown'
+          'Miguel Ángel Mancera',
+          'Ricardo Anaya Cortés'
         ]
       },
       {
         people: [
-          'Gaten Matarazzo',
-          'Caleb McLaughlin'
+          'Rafael Moreno Valle',
+          'Gabriel Quadri'
         ]
-      },
-      {
-        people: [
-          'Natalia Dyer',
-          'Charlie Heaton'
-        ]
-      },
-      {
-        people: ['Cara Buono']
       },
       {
         title: 'And',
-        people: ['Matthew Modine']
+        people: ['31415 candidatos independientes']
       },
       {
-        title: 'Co-Executive Producer',
-        people: ['Iain Patterson']
+        title: 'In',
+        people: ['Stranger Things 2018']
       },
       {
         title: 'Executive Producer',
@@ -50,10 +44,7 @@ var StrangerThings = {
       },
       {
         title: 'Executive Producers',
-        people: [
-          'Shawn Levy',
-          'Dan Cohen'
-        ]
+        people: ['Enrique Segoviano']
       },
       {
         title: 'Executive Producers',
